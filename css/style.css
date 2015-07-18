@@ -3,11 +3,13 @@
 */
 body {
   text-align: center;
-  font-family: 'Abel', sans-serif; color: #333333;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
   background-color: #FFFFFF;
 }
 
 article h1 {
+  font-family: 'Abel', sans-serif;
   font-size: 48px;
   font-weight: normal;
   margin-top: 60px;
@@ -46,7 +48,7 @@ article h1::after {
 }
 
 article p {
-  font-size: 26px;
+  font-size: 22px;
 }
 
 ul {
