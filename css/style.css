@@ -1,7 +1,7 @@
 /*
   Created by: guinatal
 */
-body {
+body{
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #333333;
@@ -10,16 +10,17 @@ body {
   padding: 0;
 }
 
-.header {
-  background-color: #235480;
+.header{
+  background-color: #333333;
 }
 
-.header h1 {
+.header h1{
   color: #FFFFFF;
   font-size: 26px;
   position: relative;
   display: inline-block;
   margin: 15px 0;
+  font-weight: normal;
 }
 
 .content{
@@ -29,7 +30,7 @@ body {
 
 .content .photo{
   border-radius: 50%;
-  width: 200px;
+  width: 260px;
 }
 
 .content .content-left{
@@ -43,44 +44,58 @@ body {
 }
 
 .content .content-right .description{
-  font-size: 26px;
+  font-size: 22px;
 }
 
-@media (max-width: 600px) {
+.content .content-right .description p{
+  line-height: 35px;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0px;
+}
+
+ul li{
+  margin: 5px 20px;
+  display: inline-block;
+}
+
+ul li a{
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -webkit-transition: color .2s ease-in-out;
+}
+
+ul li a i.fa{
+  font-size: 28px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px){
 
   .header h1 {
     font-size: 22px;
   }
 
-  .content .content-right {
+  .content .content-right{
     display: block;
     margin-left: 0;
   }
 
   .content .content-right .description{
-    font-size: 22px;
+    font-size: 18px;
   }
 
-}
+  ul li{
+    margin: 5px 15px;
+  }
 
-ul {
-  list-style-type: none;
-  padding: 0px;
-}
-
-ul li {
-  margin-bottom: 15px;
-  margin-right: 25px;
-  display: inline;
-}
-
-ul li a {
-  font-size: 36px;
-  text-decoration: none;
-  color: black;
-  transition: color .2s ease-in-out;
-  -moz-transition: color .2s ease-in-out;
-  -webkit-transition: color .2s ease-in-out;
 }
 
 /* Effects */
@@ -88,7 +103,7 @@ ul li a {
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-.fade-in {
+.fade-in{
 	opacity:0; /* invisible from the start */
 	-webkit-animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
 	-moz-animation:fadeIn ease-in 1;
